@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="timer">
+    <div class="timer-text">
+      {{times.minutes}} <span>min</span>  {{times.seconds}} <span>sec</span>  
+    </div>
+    <div>
+      <button (click)="startCount()" *ngIf="startBtn" class="btn-primary">Start</button>
+      <button *ngIf="!startBtn" (click)="stopTimer()" class="btn-stop btn-primary">Stop</button>
+      <button (click)="dbClickCheck()" #dbClick class="btn-primary">Wait</button>
+      <button (click)="resetTimer()" class="btn-primary">Reset</button>
+    </div>
+  </div>
+  
+</div>

@@ -1,0 +1,21 @@
+@import "/src/styles/vendors/bootstrap/bootstrap";
+
+.timer{
+    text-align: center;
+    margin-top: 200px;
+}
+.timer-text{
+    font-size: 50px;
+}
+.btn-primary{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+.btn-stop{
+    background-color: red;
+    &:hover {
+        background-color: rgb(132, 4, 4);
+    }
+}
